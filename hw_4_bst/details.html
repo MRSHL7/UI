@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS v5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <style>
+        .navbar .nav-link.active {
+            color: aqua;
+            border-bottom: 2px solid white;
+            font-weight: bold;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: aqua;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Times, serif;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+
+        .navbar .navbar-nav .nav-link:hover {
+            color: white;
+        }
+
+        .register-btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Times, serif;
+            font-variant: small-caps;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        h4 {
+            color: aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Times, serif;
+            font-variant: small-caps;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .breadcrumb {
+            font-weight: 800;
+            font-size: 25px;
+            padding: 12px 20px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body
+    style="background-color: #004f55;font-variant: small-caps;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Times, serif;">
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-md" style="background-color: black;">
+            <div class="container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT22pWIkqfsqX8v28WeBHnF9kCPnn-GcNjSFCVD1NYpag&s=10"
+                    class="img-fluid me-5" alt="" width="140px" />
+
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto me-auto mt-2 mt-lg-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html" aria-current="page">Home
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="details.html">Product Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="soon.html">Coming Soon</a>
+                        </li>
+                    </ul>
+                    <a name="" id="" class="btn btn-info text-dark register-btn" href="register.html"
+                        role="button">Register</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    <main>
+        <div class="container">
+            <nav class="breadcrumb">
+                <a class="breadcrumb-item" href="home.html">Home</a>
+                <a class="breadcrumb-item" href="product.html">Products</a>
+                <span class="breadcrumb-item active" aria-current="page">Product Details</span>
+            </nav>
+        </div>
+
+        <div class="container py-4">
+            <div class="row align-items-center text-white p-3 rounded mb-4">
+                <div class="col-md-6 text-center">
+                    <img src="data:image/jpeg;base64,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"
+                        class="img-fluid rounded" alt="iQOO 15R 5G" style="height: 400px;">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-info">Apple iPhone 18 Pro Max</h2>
+                    <p>Glaicer, 12GB RAM | 512GB Storage | A20 Pro chip </p>
+                    <h4 class="text-info">Price: ₹1,79,999</h4>
+                </div>
+            </div>
+
+            <div class="row align-items-center text-white p-3 rounded mb-4">
+                <div class="col-md-6">
+                    <h2 class="text-info">Samsung Galaxy S25 Ultra 5G</h2>
+                    <p>Titanium Whitesilver | 12GB RAM | 256GB Storage</p>
+                    <h4 class="text-info">Price: ₹79,999</h4>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9sgU3smOVG6kSgLILaqsD_Azlc3AnsDDtbrGuORppKQ&s"
+                        class="img-fluid rounded" alt="iQOO Smartphone" style="height: 350px;">
+                </div>
+            </div>
+
+            <div class="row align-items-center text-white p-3 rounded mb-4">
+                <div class="col-md-6 text-center">
+                    <img src="https://m.media-amazon.com/images/I/41p3n0CreQL._SY300_SX300_QL70_FMwebp_.jpg"
+                        class="img-fluid rounded" alt="iQOO Smartphone" style="height: 350px;">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-info">iQOO 15</h2>
+                    <p>Alpha 2026 | 12 GB RAM | 256 GB Storage</p>
+                    <h4 class="text-info">Price: ₹85,999</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <div class="accordion mb-4" id="productAccordion">
+                <div class="accordion-item bg-dark text-light border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#description">
+                            Description
+                        </button>
+                    </h2>
+                    <div id="description" class="accordion-collapse collapse show" data-bs-parent="#productAccordion">
+                        <div class="accordion-body">
+                            A smartphone designed for gaming, multitasking and everyday use.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-dark text-light border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#specifications">
+                            Specifications
+                        </button>
+                    </h2>
+                    <div id="specifications" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                        <div class="accordion-body">
+                            RAM: 12GB<br>
+                            Storage: 256GB<br>
+                            Connectivity: 5G
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-dark text-light border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#returnPolicy">
+                            Return Policy
+                        </button>
+                    </h2>
+                    <div id="returnPolicy" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                        <div class="accordion-body">
+                            Please check the store's return policy before placing your order.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <div class="bg-black text-white p-3 rounded mb-4">
+                <h5 class="text-info">Customer Rating</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-info text-dark" style="width: 85%;">
+                        85%
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <div class="row g-3 mb-4">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-info btn-lg w-100" id="cartButton">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-light btn-lg w-100" data-bs-toggle="modal"
+                        data-bs-target="#buyModal">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div class="toast" id="cartToast" role="alert" aria-live="polite">
+                <div class="toast-header">
+                    <strong class="me-auto">Croma Store</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                    Product added to cart successfully!
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="buyModalLabel">
+                            Confirm Order
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        Do you want to buy the iQOO 15R 5G Smartphone for ₹59,999?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Cancel
+                        </button>
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal">
+                            Confirm Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="container py-4">
+
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="product.html" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="details.html">3</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="about.html">4</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="contact.html">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="about.html" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </main>
+    <footer class="py-4 bg-black text-center">
+        <!-- place footer here -->
+        <h4> &copy; 2026 Croma Store. All Rights Reserved.</h4>
+    </footer>
+    <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+    <script>
+        document.getElementById("cartButton").addEventListener("click", function () {
+            const toast = new bootstrap.Toast(document.getElementById("cartToast"));
+            toast.show();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

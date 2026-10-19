@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        body {
+            background-color: rgb(50, 255, 238);
+            color: black;
+            margin: 0;
+            padding: 50px 20px;
+            font-family: Arial, sans-serif;
+            font-style: italic;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline dashed;
+            font-variant: small-caps;
+            margin-bottom: 40px;
+        }
+
+        form {
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            padding: 30px;
+            border: 3px dotted rgb(255, 4, 222);
+            border-radius: 30px;
+            box-shadow: 8px 8px 30px black;
+            background: linear-gradient(
+                120deg,
+                red,
+                pink,
+                blue,
+                green,
+                chocolate,
+                yellow
+            );
+            background-size: 400% 400%;
+            animation: gd 5s ease infinite;
+            transition: box-shadow 0.5s, transform 0.5s;
+        }
+
+        table:hover {
+            box-shadow: 12px 12px 40px black;
+            transform: scale(1.02);
+        }
+
+        @keyframes gd {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        td {
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .button-row {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Login Page</h1>
+
+    <form action="home.html" method="get">
+        <table>
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" name="Enter your name" pattern="[A-Z,a-z]+" required></td>
+            </tr>
+
+            <tr>
+                <td>Password :</td>
+	            <td><input type="password" name="Enter password" required></td>
+            </tr>
+
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

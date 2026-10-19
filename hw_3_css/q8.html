@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ 
+        background-color: rgb(98, 255, 50);
+        color: black;
+        }
+    table{
+        color:rgb(0, 0, 0);
+        text-align: center;
+        width: 100%;
+        max-width: 1000px;
+        box-shadow: 8px 8px 30px black;
+        margin:auto;
+        padding: 30px; 
+        border : dotted rgb(255, 4, 45);
+        border-radius: 50px;
+        background: linear-gradient(
+                120deg,
+                rgb(223, 223, 126),
+                rgb(255, 166, 181),
+                rgb(155, 255, 155),
+                rgb(255, 163, 163),
+                rgb(255, 219, 151),
+                rgb(153, 153, 255)
+            );
+            background-size : 500% 500%;
+            animation-name: gd;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        @keyframes gd{
+            0%,
+            100%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% ;
+            }
+    }
+    td{
+        font-weight: bold;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    div{
+        border-radius: 100%;
+    }
+
+    h1{
+        text-align: center;
+        text-decoration: underline dashed;
+    }
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1>Feedback Form</h1>
+    </div>
+    <div style="text-align: center; display: flex; justify-content:center ; margin-top: 100px;">
+        <form action="">
+            <table>
+                <tr>
+                    <td><strong>Name :</strong></td>
+                    <td><input class="text" type="text" placeholder="Sahil" pattern="[a-z,A-Z]+" required></td>
+                </tr>
+                <tr>
+                    <td><strong>Email :</strong></td>
+                    <td><input class="text" type="email" placeholder="sahil@example.com" required></td>
+                </tr>
+                <tr>
+                    <td><strong>Phone :</strong></td>
+                    <td><input class="text" type="number" placeholder="1234567890" minlength="10" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><strong>Rating :</strong></td>
+                    <td ><input type="radio" class="radio" name="5" id="">Very Bad&nbsp;&nbsp;
+                        <input class="radio" type="radio" name="5" id="">Not-Satisfy&nbsp;&nbsp;
+                        <input class="radio" type="radio" name="5" id="">Neutral⭐&nbsp;&nbsp;
+                        <input class="radio" type="radio" name="5" id="">Good⭐⭐&nbsp;&nbsp;
+                        <input class="radio" type="radio" name="5" id="">Excellent⭐⭐⭐</td>
+                </tr>
+                <tr>    
+                    <td><strong>Service Type :</strong></td>
+                    <td><select name="service" id="">Service
+                        <option value="service">--Select Service--</option>
+                        <option value="customer">Customer Support</option>
+                        <option value="technical">Technical Support</option>
+                        <option value="hardware">Hardware Support</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><input class="check" type="checkbox" name="" id=""> </td>
+                    <td><p>I agree to be contacted</p></td>
+                   
+                </tr>
+                <tr>
+                    <td><button>Submit</button></td>
+                    
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

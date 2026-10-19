@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Register Page</title>
+    <style>
+        body {
+            background-color: rgb(98, 255, 50);
+            color: black;
+            margin: auto;
+            padding: 50px;
+        }
+
+        table {
+            font-size: x-large;
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            width: 100%;
+            max-width: 1000px;
+            box-shadow: 8px 8px 30px black;
+            margin: auto;
+            padding: 20px;
+            border: dotted rgb(255, 4, 45);
+            border-radius: 50px;
+            background: linear-gradient(120deg,
+                    rgb(223, 223, 126),
+                    rgb(255, 166, 181),
+                    rgb(155, 255, 155),
+                    rgb(255, 163, 163),
+                    rgb(255, 219, 151),
+                    rgb(153, 153, 255));
+            background-size: 500% 500%;
+            animation-name: gd;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes gd {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100%;
+            }
+        }
+
+        td {
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        div {
+            border-radius: 100%;
+        }
+
+        h1 {
+            padding: 50px;
+            font-variant: small-caps;
+            text-align: center;
+            text-decoration: underline dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Register Page</h1>
+    <form action="login.html">
+        <div>
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td><input type="text" name="Enter your name" pattern="[A-Z,a-z]+" required></td>
+                </tr>
+                <tr>
+                    <td>Age :</td>
+                    <td><input type="number" name="" min="10" max="60" required></td>
+                </tr>
+                <tr>
+                    <td>DOB :</td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+
+                <td>Email : </td>
+                <td><input type="email" name="" required></td>
+                </tr>
+                <tr>
+                    <td>City : </td>
+                    <td>
+                        <select id="city" name="city" required>
+                            <option value="">Select your city</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Thane">Thane</option>
+                            <option value="Thane">Pune</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Choose File : </td>
+                    <td>
+                        <input type="file" id="file" name="file" accept=".pdf">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address : </td>
+                    <td>
+                        <textarea id="address" name="address" rows="4" placeholder="Enter your address"
+                            required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" name="" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="accept" name="accept" required>
+
+                        I accept that all the data is true and valid
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>
